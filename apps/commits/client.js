@@ -12,6 +12,7 @@
 var Backbone = require('backbone')
   , $ = Backbone.$ = require('components-jquery')
   , sd = require('sharify').data
+  , stroll = require('./templates/stroll2.js')
   , Commits = require('../../collections/commits.js')
   , listTemplate = function() {
       return require('./templates/list.jade').apply(null, arguments)
@@ -20,6 +21,7 @@ var Backbone = require('backbone')
 module.exports.CommitsView = CommitsView = Backbone.View.extend({
 
   initialize: function() {
+    stroll.bind( 'ul#commits-list', { live: true }  );
     this.collection.on('sync', this.render, this);
   },
 
