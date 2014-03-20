@@ -9,20 +9,12 @@
 // composable in general.
 //
 
-<<<<<<< HEAD
-var Backbone = require('backbone')
-  , $ = Backbone.$ = require('components-jquery')
-  , sd = require('sharify').data
-  , stroll = require('./templates/stroll2.js')
-  , Commits = require('../../collections/commits.js')
-  , listTemplate = function() {
-=======
 var Backbone = require('backbone'),
     $ = require('jquery'),
     sd = require('sharify').data,
+    stroll = require('./templates/stroll2.js'),
     Commits = require('../../collections/commits.js'),
     listTemplate = function() {
->>>>>>> 66dffd0966220ceb7dd530ad584c55a82a3099a7
       return require('./templates/list.jade').apply(null, arguments)
     };
 Backbone.$ = $;

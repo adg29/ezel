@@ -6,9 +6,4 @@
 // small, often just a line of initialize code like this.
 //
 
-<<<<<<< HEAD
-var client = require('../apps/commits/client.js');
-client.init();
-=======
 require('jquery')(require('../apps/commits/client.js').init)
->>>>>>> 66dffd0966220ceb7dd530ad584c55a82a3099a7
