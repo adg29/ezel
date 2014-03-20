@@ -31,9 +31,7 @@ describe('CommitsView', function() {
           repo: 'bar'
         }).models,
       }, function() {
-        benv.expose({
-          $: require('components-jquery')
-        });
+        benv.expose({ $: require('jquery') });
         CommitsView = benv.requireWithJadeify(
           '../client.js',
           ['listTemplate']
